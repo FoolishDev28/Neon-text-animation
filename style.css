@@ -1,0 +1,28 @@
+h1{
+	text-align: center;
+}
+body{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 90vh;
+	background: #1c2a44;
+}
+.neonText{
+	animation: flicker 1.4s infinite alternate;
+	color:#fff;
+}
+@keyframes flicker{
+	0%, 15% ,23%,25%,58%,100%{
+		text-shadow:
+		 0 0 7px black,0 0 10pc #fff,0 0 22px #fff,0 0 43px #f09, 0 0 94px #f09,0 0 100px #f09,0 0 150px #f09;
+
+
+
+
+
+	}
+	20%,24%,54%{
+		text-shadow: none;
+	}
+}
